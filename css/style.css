@@ -1,0 +1,155 @@
+body {
+    margin: 0; /*overridovali smo default marginu body-ja koja je 8px*/
+    text-align: center; /*0vaj property mora biti u nekom parent elementu dakle ili body ili top-container.
+    ovo radi ako imamo inline elemente ili full block elemente*/
+    font-family: 'Merriweather', serif; /*ako na OS nema helvetica prikazi arial*/
+    /*font-size: 150%;*/
+    
+}
+h1 {
+    color: #3e978b;
+    margin: 50px auto 0 auto;/*takodje i ovde, desni klik - inspect je jako dobra stvar!*/
+    /*margin: 0 auto 0 auto - moze i ovako da se centrira ako stavimo da je sirina texta 10% stranice npr.*/
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem; /*100% = 16px --> 90px/16 * 100 = 562.5% ovo je da bi nam se font menjao ako neko zoom radi u hromu.
+    isti efekat moze se postici mernom jedinicom REM (ROOT M = width of the capital letter m, bez uticaja ostalih velicina fonta na ovu) --> 1em = 16px --> 90px = 5.625em */
+    font-weight: lighter;
+    /*line-height: 2; bez ikakve jedinice*/
+}
+h2 {
+    color: #3e978b;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-top: 80px;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #3ca59d;
+    
+}
+#hello {
+    color: #3e978b;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-top: 20px;
+}
+p {
+    color: #40514e;
+    line-height: 2;
+}
+hr {
+    margin-top: 60px;
+    width: 5%;
+    border-top: 10px dotted #d2d4d4;
+   
+}
+.top-container{
+    background-color: #edffea;
+    position: relative; /*zelimo da se donji oblak ravna po ovom divu*/
+    padding-top: 100px;
+}
+.middle-container {
+    margin-top: 50px;
+   
+}
+.bottom-container {
+    background-color: #24b8ab;
+    padding: 50px 0 20px; /*da se poveca donji div*/
+  
+}
+.web {
+    text-decoration: underline;
+}
+.bottom-cloud {
+    position: absolute;
+    bottom: 300px;
+    left: 470px;
+}
+.top-cloud {
+    position: absolute;
+    right: 470px;
+    top: 50px;
+}
+#portfolio {
+    text-decoration: none;
+    color: #3ca59d;
+}
+#portfolio:hover {
+    color: #40514e;
+   
+}
+#copyright {
+   color: #edffea;
+   font-size: 0.75rem;
+   padding-top: 50px;
+}
+.footer-link {
+    color: #06645c;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 10px 30px; /*prostor izmedju linkova*/
+}
+a:hover {
+    color: #edffea;
+}
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+.frontend {
+    width: 25%;
+    float: left;/*tekst se automatski povlaci kao wrap oko slike*/
+    padding: 30px;/*da malo tekst odvojimo od slike*/
+}
+.design {
+    width: 25%;
+    float: right;
+    padding: 30px;
+}
+/*dugme je napravljeno pomocu programa CSS Button Creator i kod je prekopiran*/
+.btn_contact {
+    background: #3E978B;
+    background-image: -webkit-linear-gradient(top, #3E978B, #3CA59D);
+    background-image: -moz-linear-gradient(top, #3E978B, #3CA59D);
+    background-image: -ms-linear-gradient(top, #3E978B, #3CA59D);
+    background-image: -o-linear-gradient(top, #3E978B, #3CA59D);
+    background-image: -webkit-gradient(to bottom, #3E978B, #3CA59D);
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    border-radius: 32px;
+    margin:50px auto;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 40px;
+    font-weight: 100;
+    padding:30px;
+    padding-bottom: 40px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align:center;
+    width: 130px;
+    height: 5px;
+    font-size: medium;
+
+}
+ 
+ .btn_contact:hover {
+    border: solid #EDFFEA 0;
+    background: #d2d4d4;
+    background-image: -webkit-linear-gradient(top, #d2d4d4, #EDFFEA);
+    background-image: -moz-linear-gradient(top, #d2d4d4, #EDFFEA);
+    background-image: -ms-linear-gradient(top, #d2d4d4, #EDFFEA);
+    background-image: -o-linear-gradient(top, #d2d4d4, #EDFFEA);
+    background-image: -webkit-gradient(to bottom, #d2d4d4, #EDFFEA);
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    border-radius: 32px;
+    text-decoration: none;
+    color: #566462;
+}
